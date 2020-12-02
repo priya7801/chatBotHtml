@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        know = {
+        
+        "Hello" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Hi there!",
+        "hello" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Hi there!",
+        "HELLO" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Hi there!",
+        "Who are you?" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp I am Nikhil's Assistant",
+        "How are you?" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp I am Fine",
+        "How old are you?" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp I am infinity in age"
+        
+        
+        
+        
+        };
+        
+        function talk() {
+        var user = document.getElementById("userBox").value;
+        document.getElementById("userBox").value= "";
+        document.getElementById("chatLog").innerHTML += user+"<br>";
+        
+        if (user in know) {
+        document.getElementById("chatLog").innerHTML += know[user] + "<br>";
+        } else 
+        
+        {
+        document.getElementById("chatLog").innerHTML += "I don't understand... <br>";
+        }
+        }
+        
+        
+        
+        
+        
+        </script>
+        
+        <link rel="stylesheet" href="css/style1.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">   
+</head>
+<body>
+    <div class="box">
+
+        <p id="msg">IRIS</p>
+        <p id="msg0">Hello</p>
+        <p id="msg1">I am iris, a Virtual Assistant<br>
+        How may I help you? </p>
+    
+    <div class="ellipse">
+    </div>
+    <div class="vector">
+    </div>
+    
+    <div class="box2">
+    <p id="chatLog"> wellcome to chatbot <br> </p>
+    
+
+<input id="userBox" type="text" onkeydown="if(event.keyCode == 13) {talk()}">
+
+
+</body>
+
+
+
+</html>
