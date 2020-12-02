@@ -136,30 +136,48 @@ left: 13px;
 top: 199px;
 border-radius: 8px;
 text-decoration: none;
-
 }
-#chatLog{
-    font-family: DM Sans;
+.fb1  {position: absolute;
+width: 228px;
+height: 46px;
+left: 56px;
+top: 104px;
+
+font-family: DM Sans;
 font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 21px;
+font-weight: 500;
+font-size: 18px;
+line-height: 23px;
+/* or 128% */
+color: #FFFFFF;
+Font 
+DM Sans
+Weight 
+500
+Style 
+normal
+Size 
+18px
+Line Height 
+23px
 }
-#userBox{
-    width: 49%;
-    padding: 6px 0px;
-    margin: 8px 0;
-    /* box-sizing: border-box; */
-    height: 21px;
-    width: 359px;
-    left: 13px;
-    top: 339px;
-    border-radius: 8px;
-    border-color: orange;
+#fb{
+    position: absolute;
+width: 390px;
+height: 400px;
+left: 13px;
+top: 199px;
+
+background: #FFFFFF;
+border: 1px solid #E4E4E4;
+box-sizing: border-box;
+box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+border-radius: 8px;
+height: 400px;
+width: 390px;
+left: 13px;
+top: 199px;
+border-radius: 8px;
 
 }
-.fa{
-    color: gray;
-    left: -41px;
-    top: -4px;
-}
+
